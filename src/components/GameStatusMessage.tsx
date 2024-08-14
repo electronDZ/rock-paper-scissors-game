@@ -8,7 +8,7 @@ export default function GameStatusMessage({ isSufficientFundsToBet }: Props) {
       <h3
         className={`${!isSufficientFundsToBet ? "text-red-500" : "text-primary"} animate-fade text-center text-sm font-bold`}
       >
-        {isSufficientFundsToBet ? "INSUFFICIENT FUNDS" : "PICK YOUR POSITIONS"}
+        {!isSufficientFundsToBet ? "INSUFFICIENT FUNDS" : "PICK YOUR POSITIONS"}
       </h3>
     </div>
   );
